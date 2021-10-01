@@ -10,6 +10,7 @@ public class AnimalHunger : MonoBehaviour
     public Slider hungerSlider;     //Allows targeting a UI Slider GameObject.
     public int amountToBeFed;       //Tells how much can be fed before being destroyed.
 
+
     private int currentFedAmount = 0;   //Tells how much is already fed.
 
     private GameManager gameManager;    //Links to GameManager.cs.
