@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
+    //Controls how often a projectile can be launched:
 {
     public GameObject dogPrefab;
 
@@ -13,11 +14,12 @@ public class PlayerControllerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // On spacebar press, send dog
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
+        // On spacebar press, if enough time has elapsed since last fire, send dog
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)    //Checks if spacebar pressed and if game time passed is greater than the nextFire variable.
+            //Time.time is the time in seconds since the game started.
         {
-            nextFire = Time.time + fireRate;
-            Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
+            nextFire = Time.time + fireRate;    //Resets nextFire to current time + fireRate
+            Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);   //Creates a copy of dogPrefab & sends it on screen based on it's rotation.
         }
     }
 }
