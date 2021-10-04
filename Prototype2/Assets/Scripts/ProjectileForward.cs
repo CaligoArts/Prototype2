@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ProjectileForward : MonoBehaviour
 {
+    //Shoots GameObject script is attached to forward.
+
     public float speed = 40.0f;     //Speed projectile moves.
 
     // Update is called once per frame

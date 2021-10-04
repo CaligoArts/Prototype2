@@ -37,7 +37,6 @@ public class AnimalHunger : MonoBehaviour
 
         if (currentFedAmount >= amountToBeFed)
         {
-            
             gameManager.AddScore(amountToBeFed);    //Adds score in GameManager.
             Destroy(gameObject, 0.1f);      //Destroys projectile.
         }

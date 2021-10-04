@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerControllerP2 : MonoBehaviour
 {
+    //Player controller for a top down move left, right, forward, backward with a stationary camera & movement boundaries that allows shooting projectiles forward.
+
     public float horizontalInput;   //Variable to track user input left/ right.
     public float verticalInput;     //Variable to track user input up/ down.
     public float speed = 15.0f;     //Controls speed that the input moves left or right.

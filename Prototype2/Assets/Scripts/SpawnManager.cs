@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
 
     //Timer control variables to spawn on a timer:
     private float startDelay = 2;   //Delays spawn in seconds from after scene starts when used in start method. 
-    private float spawnInterval = 1.5f;     //Tells it how often to spawn once started.
+    private float spawnInterval = 2f;     //Tells it how often to spawn once started.
 
     // Start is called before the first frame update
     void Start()

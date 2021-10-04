@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
-    //Controls how often a projectile can be launched:
+    //Controls how often a projectile can be launched: (Basically a FireRate CoolDown Controller.)
 {
     public GameObject dogPrefab;
 
